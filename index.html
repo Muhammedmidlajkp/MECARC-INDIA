@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MECARC</title>
+    <link rel="icon" type="image/png" href="./assets/logo_main-removebg-preview.png">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="loading-logobb">
+                    <img src="./assets/logo_white.png" alt="">
+                    <h1>MECARC </h1>
+                </div>
+                <p class="loading-tagline">Pioneering Sustainable Manufacturing Solutions</p>
+            </div>
+            <div class="loading-spinner">
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+            </div>
+            <div class="loading-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <p class="loading-text" id="loading-text">Initializing sustainable solutions...</p>
+            </div>
+        </div>
+        <div class="loading-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="./assets/logo_white.png" alt="logo">
+                    <h2>MECARC</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="btn btn--primary btn-sm " id="quote-btn">Get Quote</button>
+                <button class="mobile-menu-toggle" id="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Carousel -->
+    <section id="home" class="hero" class="heromain">
+        <div class="hero-carousel">
+            <div class="carousel-container">
+                <div class="carousel-slides">
+                    <div class="carousel-slide active">
+                        <img data-src="https://pplx-res.cloudinary.com/image/upload/v1758708338/pplx_project_search_images/d7241088b15292969fc5c5bc770f0014090178eb.png" alt="Precision Cutting Technology" class="lazy-image">
+                        <div class="carousel-overlay">
+                            <div class="container">
+                                <div class="carousel-content slide-animate" data-direction="left">
+                                    <h1>Advanced Paper Bag Manufacturing</h1>
+                                    <p class="carousel-subtitle">High-speed, eco-friendly production lines</p>
+                                    <p class="carousel-description">State-of-the-art paper bag making machines producing 100-400 bags per minute with minimal environmental impact</p>
+                                    <div class="hero-buttons">
+                                        <button class="btn btn--primary btn--lg">Explore Products</button>
+                                        <button class="btn btn--outline btn--lg">Learn More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1756820687/pplx_project_search_images/abcceca592b57b7df2e86b89976ed5fc7b86e25b.png" alt="Advanced Paper Bag Manufacturing" class="lazy-image loaded">
+                        <div class="carousel-overlay">
+                            <div class="container">
+                                <div class="carousel-content slide-animate" data-direction="left">
+                                    <h1>Precision Cutting Technology</h1>
+                                    <p class="carousel-subtitle">Automated cutting solutions for sustainable materials</p>
+                                    <p class="carousel-description">Advanced cutting equipment with laser precision and material optimization for maximum efficiency</p>
+                                    <div class="hero-buttons">
+                                        <button class="btn btn--primary btn--lg">Explore Products</button>
+                                        <button class="btn btn--outline btn--lg">Learn More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img data-src="https://pplx-res.cloudinary.com/image/upload/v1758708338/pplx_project_search_images/3263dfacdeaad4b8c112d42db6dfe8876775d1c0.png" alt="Sustainable Packaging Solutions" class="lazy-image">
+                        <div class="carousel-overlay">
+                            <div class="container">
+                                <div class="carousel-content slide-animate" data-direction="left">
+                                    <h1>Sustainable Packaging Solutions</h1>
+                                    <p class="carousel-subtitle">Complete eco-friendly packaging production lines</p>
+                                    <p class="carousel-description">Integrated packaging systems for biodegradable and recyclable packaging materials</p>
+                                    <div class="hero-buttons">
+                                        <button class="btn btn--primary btn--lg">Explore Products</button>
+                                        <button class="btn btn--outline btn--lg">Learn More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img data-src="https://pplx-res.cloudinary.com/image/upload/v1754898346/pplx_project_search_images/19fd70a22fcf6950030238e7413998859d4ea898.png" alt="Industrial Automation Excellence" class="lazy-image">
+                        <div class="carousel-overlay">
+                            <div class="container">
+                                <div class="carousel-content slide-animate" data-direction="left">
+                                    <h1>Industrial Automation Excellence</h1>
+                                    <p class="carousel-subtitle">Smart manufacturing for sustainable production</p>
+                                    <p class="carousel-description">Robotic automation and AI-driven systems for efficient, sustainable manufacturing processes</p>
+                                    <div class="hero-buttons">
+                                        <button class="btn btn--primary btn--lg">Explore Products</button>
+                                        <button class="btn btn--outline btn--lg">Learn More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img data-src="https://pplx-res.cloudinary.com/image/upload/v1755081515/pplx_project_search_images/ad6e1b0fec8a05e3d9b2b88b2b0d9cd422f11662.png" alt="Green Manufacturing Facilities" class="lazy-image">
+                        <div class="carousel-overlay">
+                            <div class="container">
+                                <div class="carousel-content slide-animate" data-direction="left">
+                                    <h1>Green Manufacturing Facilities</h1>
+                                    <p class="carousel-subtitle">Energy-efficient production environments</p>
+                                    <p class="carousel-description">Modern facilities designed for maximum energy efficiency and minimal environmental footprint</p>
+                                    <div class="hero-buttons">
+                                        <button class="btn btn--primary btn--lg">Explore Products</button>
+                                        <button class="btn btn--outline btn--lg">Learn More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Carousel Navigation -->
+                <button class="carousel-btn carousel-prev" id="prevBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                </button>
+                <button class="carousel-btn carousel-next" id="nextBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </button>
+                
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <button class="carousel-indicator active" data-slide="0"></button>
+                    <button class="carousel-indicator" data-slide="1"></button>
+                    <button class="carousel-indicator" data-slide="2"></button>
+                    <button class="carousel-indicator" data-slide="3"></button>
+                    <button class="carousel-indicator" data-slide="4"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Product Range</h2>
+                <p>Innovative machinery solutions for sustainable manufacturing</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card slide-animate" data-direction="left" data-delay="0">
+                    <div class="product-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1756820687/pplx_project_search_images/abcceca592b57b7df2e86b89976ed5fc7b86e25b.png" alt="Paper Bag Manufacturing Machine" class="lazy-image loaded">
+                    </div>
+                    <div class="product-content">
+                        <h3>Paper Bag Manufacturing Machines</h3>
+                        <p>Fully automatic paper bag making machines producing 100-400 bags per minute with minimal waste</p>
+                        <ul class="feature-list">
+                            <li>High-speed production</li>
+                            <li>Energy efficient</li>
+                            <li>Minimal waste generation</li>
+                            <li>Easy operation</li>
+                        </ul>
+                        <a href="/products/product-details.html" id="paper-bag-learn-more" class="btn btn--primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="product-card slide-animate" data-direction="right" data-delay="200">
+                    <div class="product-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1758708338/pplx_project_search_images/d7241088b15292969fc5c5bc770f0014090178eb.png" alt="Precision Cutting Equipment" class="lazy-image loaded">
+                    </div>
+                    <div class="product-content">
+                        <h3>Precision Cutting Equipment</h3>
+                        <p>Advanced cutting machines for sustainable materials with precision and efficiency</p>
+                        <ul class="feature-list">
+                            <li>Laser precision</li>
+                            <li>Material optimization</li>
+                            <li>Automated cutting</li>
+                            <li>Safety systems</li>
+                        </ul>
+                        <a href="/products/product-details-cutting.html" id="cutting-equipment-learn-more" class="btn btn--primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="product-card slide-animate" data-direction="left" data-delay="400">
+                    <div class="product-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1758708338/pplx_project_search_images/3263dfacdeaad4b8c112d42db6dfe8876775d1c0.png" alt="Eco-Packaging Solutions" class="lazy-image loaded">
+                    </div>
+                    <div class="product-content">
+                        <h3>Eco-Packaging Solutions</h3>
+                        <p>Complete packaging line equipment for environmentally friendly packaging materials</p>
+                        <ul class="feature-list">
+                            <li>Recyclable materials</li>
+                            <li>Reduced packaging</li>
+                            <li>Automated systems</li>
+                            <li>Quality control</li>
+                        </ul>
+                        <a href="/products/product-details-eco-packaging.html" id="eco-packaging-learn-more" class="btn btn--primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="product-card slide-animate" data-direction="right" data-delay="0">
+                    <div class="product-image">
+                        <img src="/assets/Screen Printing Machine.png" alt="Screen Printing Machine" class="lazy-image loaded">
+                    </div>
+                    <div class="product-content">
+                        <h3>Screen Printing Machine</h3>
+                        <p>Versatile screen printing machines for high-quality prints on textiles, paper, and other flat substrates.</p>
+                        <ul class="feature-list">
+                            <li>Multi-color stations</li>
+                            <li>Precise registration</li>
+                            <li>Durable construction</li>
+                            <li>Easy adjustments</li>
+                        </ul>
+                        <a href="/products/product-details-screen-printing.html" id="screen-printing-learn-more" class="btn btn--primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="product-card slide-animate" data-direction="left" data-delay="200">
+                    <div class="product-image">
+                        <img src="/assets/cleaned_image (1).png" alt="Non-Woven Bag Making Machine" class="lazy-image loaded">
+                    </div>
+                    <div class="product-content">
+                        <h3>Non-Woven Bag Making Machines</h3>
+                        <p>Efficiently produce durable, reusable non-woven fabric bags in various shapes and sizes.</p>
+                        <ul class="feature-list">
+                            <li>Multiple bag types</li>
+                            <li>Computerized control</li>
+                            <li>High production speed</li>
+                            <li>Eco-friendly alternative</li>
+                        </ul>
+                        <a href="/products/product-details-non-woven.html" id="non-woven-learn-more" class="btn btn--primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="product-card slide-animate" data-direction="right" data-delay="400">
+                    <div class="product-image">
+                        <img src="/assets/Paper Straw Making Machines.jpeg" alt="Paper Straw Making Machine" class="lazy-image loaded">
+                    </div>
+                    <div class="product-content">
+                        <h3>Paper Straw Making Machines</h3>
+                        <p>Automated solutions for manufacturing biodegradable and food-safe paper drinking straws.</p>
+                        <ul class="feature-list">
+                            <li>Multi-blade cutting</li>
+                            <li>High-speed winding</li>
+                            <li>Food-grade materials</li>
+                            <li>Adjustable straw diameter</li>
+                        </ul>
+                        <a href="/products/product-details-paper-straw.html" id="paper-straw-learn-more" class="btn btn--primary">Learn More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Mecarc India</h2>
+                <p>Industry-leading technology for sustainable manufacturing</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌱</div>
+                    <h3>Sustainable Technology</h3>
+                    <p>Our machines use the latest eco-friendly technology to minimize environmental impact while maximizing efficiency</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Energy Efficiency</h3>
+                    <p>Advanced energy management systems reduce power consumption by up to 40% compared to traditional machinery</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏆</div>
+                    <h3>Quality Production</h3>
+                    <p>Precision engineering ensures consistent, high-quality output meeting international standards</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Cost Effective</h3>
+                    <p>Lower operational costs through efficient production, reduced waste, and minimal maintenance requirements</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="about-stats slide-animate" data-direction="right">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="500+">0</div>
+                        <div class="stat-label">Machines Delivered</div>
+                        <div class="stat-description">Successfully installed worldwide</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="10+">0</div>
+                        <div class="stat-label">Years Experience</div>
+                        <div class="stat-description">In sustainable manufacturing</div>
+                    </div>
+                    <!-- <div class="stat-item">
+                        <div class="stat-number" data-target="50+">50+</div>
+                        <div class="stat-label">Countries Served</div>
+                        <div class="stat-description">Global reach and presence</div>
+                    </div> -->
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="95%">0</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                        <div class="stat-description">Proven track record</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Mecarc India</h2>
+                    <p class="lead">Leading the future of eco-friendly manufacturing with innovative machinery for sustainable goods production.</p>
+                    <p>With over 10 years of experience in the industry, Mecarc India has established itself as a pioneer in sustainable manufacturing solutions. We specialize in developing cutting-edge machinery for producing eco-friendly goods, helping businesses transition to more sustainable production methods.</p>
+                    <p>Our commitment to innovation, quality, and environmental responsibility drives everything we do. From paper bag manufacturing machines to precision cutting equipment, we provide comprehensive solutions that meet the evolving needs of modern sustainable manufacturing.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755003966/pplx_project_search_images/2d55a31114333a74ea7f3830bb9bb2f15fbdda58.png" alt="Modern manufacturing facility" class="lazy-image loaded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive support throughout your manufacturing journey</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Installation & Setup</h3>
+                    <p>Professional installation and setup services for all machinery</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎓</div>
+                    <h3>Training Programs</h3>
+                    <p>Comprehensive operator training for optimal machine performance</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛠️</div>
+                    <h3>Maintenance Support</h3>
+                    <p>24/7 technical support and preventive maintenance services</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Custom Solutions</h3>
+                    <p>Tailored machinery solutions for specific manufacturing requirements</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
+                <p>Real feedback from our valued partners who trust our machinery and support.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card slide-animate" data-direction="left" data-delay="0">
+                    <div class="testimonial-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <blockquote class="testimonial-quote">
+                        "The paper bag machine we purchased from Mecarc has transformed our production. It's efficient, reliable, and the support has been outstanding. Our output has doubled!"
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <h4>Anand Kumar</h4>
+                        <p>CEO, Green Pack Solutions</p>
+                    </div>
+                </div>
+                <div class="testimonial-card slide-animate" data-direction="up" data-delay="200">
+                    <div class="testimonial-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <blockquote class="testimonial-quote">
+                        "Mecarc's precision cutting equipment is second to none. The accuracy is incredible, and it has significantly reduced our material waste. A fantastic investment."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <h4>Priya Sharma</h4>
+                        <p>Operations Manager, EcoCutters Ltd.</p>
+                    </div>
+                </div>
+                <div class="testimonial-card slide-animate" data-direction="right" data-delay="400">
+                    <div class="testimonial-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <blockquote class="testimonial-quote">
+                        "We were looking for a complete eco-packaging solution, and Mecarc delivered beyond our expectations. Their team is knowledgeable and their machines are top-tier."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <h4>Rajesh Singh</h4>
+                        <p>Founder, Earthly Goods</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header slide-animate" data-direction="left">
+                <h2>Get In Touch</h2>
+                <p>Ready to transform your manufacturing process? Contact us today</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company" class="form-label">Company Name</label>
+                            <input type="text" id="company" name="company" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="interest" class="form-label">Area of Interest</label>
+                            <select id="interest" name="interest" class="form-control">
+                                <option value="">Select an option</option>
+                                <option value="paper-bag-machines">Paper Bag Machines</option>
+                                <option value="cutting-equipment">Cutting Equipment</option>
+                                <option value="packaging-solutions">Packaging Solutions</option>
+                                <option value="screen-printing-machine">Screen Printing Machine</option>
+                                <option value="non-woven-bag-machine">Non-Woven Bag Making Machine</option>
+                                <option value="paper-straw-machine">Paper Straw Making Machine</option>
+                                <option value="custom-solutions">Custom Solutions</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" rows="5" class="form-control" placeholder="Tell us about your project requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4><i class="fa-solid fa-location-dot"></i> Address</h4>
+                        <p>Kadavu Road <br> Karuvanpoyil, Koduvally <br> Kozhikode, Kerala <br> INDIA, Pin: 673572</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4><i class="fa-solid fa-phone"></i> Phone</h4>
+                        <p>+91 9048949432 <br> +91 7306766969</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4><i class="fa-solid fa-envelope"></i> Email</h4>
+                        <p><a href="mailto:mecarcindia@gmail.com">mecarcindia@gmail.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h4><i class="fa-solid fa-clock"></i> Business Hours</h4>
+                        <p>Monday - Saturday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 2:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mecarc India</h3>
+                    <p>Pioneering Sustainable Manufacturing Solutions</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/919048949432" target="_blank"><i class="fa-brands fa-whatsapp fa-xl" style="color: #ffffff;"></i></a>
+                        <a href="https://www.instagram.com/mecarc_machinery" target="_blank"><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a>
+                        <a href="https://youtube.com/@mecarc_machinery" target="_blank"><i class="fa-brands fa-youtube fa-xl" style="color: #ffffff;"></i></a>
+                        <a href="https://www.facebook.com/mecarc.in" target="_blank"><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff;"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#products">Paper Bag Machines</a></li>
+                        <li><a href="#products">Cutting Equipment</a></li>
+                        <li><a href="product-details-eco-packaging.html">Packaging Solutions</a></li>
+                        <li><a href="product-details-screen-printing.html">Screen Printing</a></li>
+                        <li><a href="product-details-non-woven.html">Non-Woven Bag Machines</a></li>
+                        <li><a href="#products">Custom Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Installation</a></li>
+                        <li><a href="#services">Training</a></li>
+                        <li><a href="#services">Maintenance</a></li>
+                        <li><a href="#services">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mecarc India. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quote Modal -->
+    <div class="modal hidden" id="quoteModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Request a Quote</h3>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="quoteForm">
+                    <div class="form-group">
+                        <label for="quoteName" class="form-label">Full Name</label>
+                        <input type="text" id="quoteName" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quoteEmail" class="form-label">Email Address</label>
+                        <input type="email" id="quoteEmail" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quoteCompany" class="form-label">Company Name</label>
+                        <input type="text" id="quoteCompany" name="company" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quoteProduct" class="form-label">Product Interest</label>
+                        <select id="quoteProduct" name="product" class="form-control" required>
+                            <option value="">Select a product</option>
+                            <option value="paper-bag-machines">Paper Bag Manufacturing Machines</option>
+                            <option value="cutting-equipment">Precision Cutting Equipment</option>
+                            <option value="packaging-solutions">Eco-Packaging Solutions</option>
+                            <option value="screen-printing-machine">Screen Printing Machine</option>
+                            <option value="non-woven-bag-machine">Non-Woven Bag Making Machine</option>
+                            <option value="paper-straw-machine">Paper Straw Making Machine</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="quoteRequirements" class="form-label">Requirements</label>
+                        <textarea id="quoteRequirements" name="requirements" rows="4" class="form-control" placeholder="Please describe your specific requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Submit Quote Request</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
