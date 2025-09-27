@@ -1395,6 +1395,14 @@ body.loading {
   filter: brightness(0.9) contrast(1.1);
 }
 
+/* Fix for Screen Printing Machine image zoom */
+.Screen-Printingimg .lazy-image {
+  object-fit: contain;
+}
+.Screen-Printingimg .lazy-image {
+  background: white !important;
+}
+
 .product-card:hover .product-image .lazy-image {
   transform: scale(1.1);
   filter: brightness(1) contrast(1.2);
@@ -1845,6 +1853,11 @@ body.loading {
 .contact-item p {
   color: var(--dark-text-secondary);
   margin: 0;
+}
+
+.contact-item p a {
+  color: var(--dark-text-secondary);
+  transition: color var(--duration-fast) var(--ease-standard);
 }
 
 /* Footer */
