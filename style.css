@@ -693,15 +693,18 @@ select.form-control {
   animation: fadeInUp 0.8s ease 0.3s forwards;
 }
 
-.loading-spinner {
+/* .loading-spinner {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: var(--space-32) 0;
-  position: relative;
-}
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  width: 100px; 
+  height: 100px; 
+} */
 
-.spinner-ring {
+/* .spinner-ring {
   width: 60px;
   height: 60px;
   border: 3px solid transparent;
@@ -724,7 +727,7 @@ select.form-control {
   height: 100px;
   border-bottom: 2px solid rgba(255, 0, 255, 0.3);
   animation-duration: 2.5s;
-}
+} */
 
 .loading-progress {
   margin-top: var(--space-32);
